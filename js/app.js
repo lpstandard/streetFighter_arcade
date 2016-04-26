@@ -37,8 +37,19 @@ $(document).keydown(function(e){
 
 	
 }); 
+var playsound = true; 
+
 function playHadouken(){
-	$("#hadouken-sound")[0].volume = 0.5; 
-	$("#hadouken-sound")[0].load(); 
-	$("#hadouken-sound")[0].play(); 
+	if(playsound){
+		$("#hadouken-sound")[0].volume = 0.5; 
+		$("#hadouken-sound")[0].load(); 
+		$("#hadouken-sound")[0].play(); 
+	} else {
+		$("#hadouken-sound")[0].volume = 0.0; 
+	}
 }
+
+$('.volume-control-container').on('click', function(){
+	$('.volume-control').toggleClass('fa-volume-up fa-volume-off');
+	playsound = !playsound; 
+})

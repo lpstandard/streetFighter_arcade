@@ -4,17 +4,22 @@
 	<meta charset="UTF-8">
 	<title>Streetfighter</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<div class="volume-control-container">
+		<i class="fa fa-volume-up volume-control" aria-hidden="true"></i>
+	</div>
 	<div class="main">
-		<div class="ryu"> Press X to see what happens!
+		<div class="ryu"> 
+			<h2 class="intro">Press X to see what happens!</h2>
 			<div class="ryu-still"></div>
 			<div class="ryu-ready"></div>
 			<div class="ryu-throwing"></div>
 			<div class="ryu-cool"></div>
 			<div class="hadouken"></div>
-			
 		</div>
 	</div>
 	<audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
