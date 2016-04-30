@@ -1,6 +1,19 @@
 body{
 	background-color: black; 
 }
+.introimage{
+	display: none;
+    background-image: url('../images/street fighter font.jpg');
+    background-size: 1500px 500px;
+    background-repeat: no-repeat;
+    margin-left: 24em;
+    height: 106%;
+    margin-right: 20em;
+    margin-left: -3em;
+    z-index: 10000;
+    margin-bottom: 0em;
+    margin-right: -3em;
+}
 .volume-control-container{
 	position: fixed;
 	top: 2em; 
@@ -10,27 +23,48 @@ body{
 	font-size: 2em !important; 
 	color: white; 
 }
-.main{
-	background-color: white; 
-	margin-top: 110px;
-	padding-left: 100px; 
-	min-width: 1200px; 
-	height: 500px; 
-	position: relative;
-	z-index: 1; 
+.opening{
+	border: 2px red solid;
+	font-family: 'Shadows Into Light', cursive;
+	color: black;
+	margin: 12em 32em;
+	padding: 5em;
 }
-.intro{
+.text{
+    position: absolute;
+    z-index: 9;
+    left: 18em;
+    top: 1em;
+    display: none;
+    color: #fff;
 	font-family: 'Bangers', cursive;
 	font-size: 2em;
 	margin-bottom: -1em; 
-	float: right;
 	margin-right: -12em; 
+}
+.main{
+	background-size: 100% 600px;
+	background-image: url('../images/back.jpg');
+	background-repeat: no-repeat;
+	background-color: white; 
+	margin-top: 110px;
+	min-width: 1400px; 
+	padding: 3em; 
+	height: 500px; 
+	position: relative;
+	z-index: 1; 
+	display: none;
+}
+
+span{
+	display: block;
 }
 .ryu{	
 	float: left;	
 	width: 659px;
 	height: 494px;
 	font-size: 20px; 
+	display: none;
 }
 .ryu-cool, .ryu-still, .ryu-ready, .ryu-throwing{
 	width: 659px;

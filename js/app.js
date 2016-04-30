@@ -1,4 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function(){	
+	introduction(); 
+
 	$(".ryu").mouseenter(function(){
 		$(".ryu-still").hide();
 		$(".ryu-ready").show();
@@ -37,6 +39,18 @@ $(document).keydown(function(e){
 
 	
 }); 
+
+function introduction(){
+	
+	$('.main').fadeIn(5000, function(){
+		$(".introimage").fadeIn(5000).fadeOut(5000);
+		$('.text').fadeIn(5000);
+		$('.main').fadeIn(3000);	
+		$('.ryu').fadeIn(3000);
+	});
+	
+}; 
+
 var playsound = true; 
 
 function playHadouken(){

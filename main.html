@@ -9,19 +9,26 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
 	<div class="volume-control-container">
 		<i class="fa fa-volume-up volume-control" aria-hidden="true"></i>
 	</div>
+		
+	<div class="text">
+			<span><h2>Press X to make Ryu cool!</h2></span>				
+			<span><h2>Click on Ryu to throw hadouken!</h2></span>
+	</div>
 	<div class="main">
 		<div class="ryu"> 
-			<h2 class="intro">Press X to see what happens!</h2>
 			<div class="ryu-still"></div>
 			<div class="ryu-ready"></div>
 			<div class="ryu-throwing"></div>
 			<div class="ryu-cool"></div>
 			<div class="hadouken"></div>
 		</div>
+		<div class="introimage"></div>
 	</div>
+
 	<audio id="hadouken-sound" src="sound/hadouken.mp3"></audio>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
