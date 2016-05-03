@@ -41,14 +41,12 @@ $(document).keydown(function(e){
 }); 
 
 function introduction(){
-	
-	$('.main').fadeIn(5000, function(){
-		$(".introimage").fadeIn(5000).fadeOut(5000);
-		$('.text').fadeIn(5000);
-		$('.main').fadeIn(3000);	
-		$('.ryu').fadeIn(3000);
+	$('.introimage').fadeIn(5000).fadeOut(5000, function(){
+		$('.main').fadeIn(5000, function(){
+			$('.text').fadeIn(5000);	
+			$('.ryu').fadeIn(3000);
+		}); 	
 	});
-	
 }; 
 
 var playsound = true; 
